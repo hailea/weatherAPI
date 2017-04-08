@@ -1,0 +1,80 @@
+[
+  [
+    {
+      "id": 123,
+      "zipCode": "67543",
+      "temp": "70 degrees",
+      "humidity": "45%",
+      "wind": "4 MPH",
+      "country": "England",
+      "city": "London"
+    },
+    {
+      "id": 223,
+      "zipCode": "57567",
+      "temp": "40 degrees",
+      "humidity": "35%",
+      "wind": "14 MPH",
+      "country": "USA",
+      "city": "Denver"
+    },
+    {
+      "id": 323,
+      "zipCode": "45555",
+      "temp": "110 degrees",
+      "humidity": "5%",
+      "wind": "12 MPH",
+      "country": "Ireland",
+      "city": "somecity"
+    },
+    {
+      "id": 423,
+      "zipCode": "37578",
+      "temp": "70 degrees",
+      "humidity": "45%",
+      "wind": "13 MPH",
+      "country": "France",
+      "city": "Paris"
+    }
+
+  ],
+  [
+    {
+      "id": 123,
+      "zipCode": "77543",
+      "temp": "77 degrees",
+      "humidity": "45%",
+      "wind": "4 MPH",
+      "country": "England",
+      "city": "London"
+    },
+    {
+      "id": 223,
+      "zipCode": "87567",
+      "temp": "44 degrees",
+      "humidity": "35%",
+      "wind": "14 MPH",
+      "country": "USA",
+      "city": "Denver"
+    },
+    {
+      "id": 323,
+      "zipCode": "95555",
+      "temp": "110 degrees",
+      "humidity": "5%",
+      "wind": "12 MPH",
+      "country": "Ireland",
+      "city": "somecity"
+    },
+    {
+      "id": 823,
+      "zipCode": "87678",
+      "temp": "77 degrees",
+      "humidity": "45%",
+      "wind": "13 MPH",
+      "country": "Ethiopia",
+      "city": "Addis"
+    }
+
+  ]
+]
