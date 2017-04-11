@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>practice</title>
+	<meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="includes/styles/weather.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="conatiner-fluid weatherContainer">
+        <div class="row msgContainer">
+            <h1 class="text-center">Weather App</h1>
+        </div>
+        <div class="row msgContainer">
+            <h3 class="text-center"> <span id="lState"> Maryland </span>, <span id="lCountry"> US </span> </h3>
+            <h3 id="getTime" class="text-center"></h3>
+            <div class="col-xs-6 col-md-4">
+
+                <span class="iconContainer">
+                   
+                </span>
+                <span class="tempStyle" id="lTemp">60</span>
+                    <sup>
+                        <span class="TCTF defaultTemp" id="fahereneit"><sup>o</sup>F</span> |
+                        <span class="TCTF" id="celcius"><sup>o</sup>C </span>
+                    </sup>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <strong>Condition: </strong><span id="lCondition"> Silver Spring </span> <br />
+                
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <strong>Humidity: </strong><span id="lHumidity"> 35% </span><br />
+                <strong>Wind Speed: </strong><span id="lWindSpeed"> 100MPH </span></div>
+        </div>
+        <div class="row">
+            <button class="btn btn-default" id="updateWeatherBtn">Weather Update</button> 
+            
+        </div>
+        <footer>
+            <h4 class="text-center msgContainer">Prepared By: <small>Haileab A Gebrekidan</small></h4>
+        </footer>
+    </div> 
+    <script src="includes/scripts/weatherScript.js"></script>   
+</body>
+</html>
