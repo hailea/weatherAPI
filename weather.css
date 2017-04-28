@@ -1,0 +1,47 @@
+﻿/*centigrade and fahereneit*/
+.txtStyle{
+    background-color:rgba(20,20,80,0.6);
+    
+}
+.tempStyle{
+    font-size:3em;
+}
+.defaultTemp{
+    font-size:2em;
+    color:blue; 
+    
+}
+.TCTF{
+    font-size:2em;
+    color:blue; 
+}
+.TCTF:hover{
+    font-size:2em;
+    color:blue;
+    cursor:pointer;   
+}
+.msgContainer{
+    background-color:rgba(80,80,80,0.6);
+    text-shadow:2px 2px 2px rgba(80,80,80,0.6);
+    color:#FFF;
+    width: 70%;
+    margin: 3% 5% 1% 10%;
+    align-items:center;
+    border-color:bisque;
+    font-size:1.2em;font-style:oblique;
+}
+button{
+    margin: 0 0 0 25%;
+}
+#bkContainer{
+background-color:#808080;
+}
+.weatherContainer{
+    background:url("http://openweathermap.org/img/w/10d.png") repeat;
+    width:90%;height:90%;
+}
+footer{
+  font-family: 'Lobster', cursive; position : relative; margin: 2% 2% 1% 40%;
+  margin:5%;
+}
+/*  */

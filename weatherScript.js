@@ -44,6 +44,7 @@
     function urlUpdate(lat, lon) {
         timeStamp = "";
         URL = url + "lat=" + lat + "&lon=" + lon + "&appid=" + appid;
+        console.log(URL);
         timeStamp = ((/\?/).test(URL) ? "&" : "?") + (new Date()).getTime();
         URL += timeStamp;
         console.log(URL);
@@ -83,24 +84,26 @@
         TK = data.main.temp;
         TF = Math.floor(9 / 5 * (TK - 273.15) + 32);
         TC = Math.floor(TK - 273.15);
-        defaultTemp();
-        $f.on("mouseenter", defaultTemp);
-        $c.on("mouseleave", defaultTemp);
-        function  defaultTemp() {
+        toFahereneit();
+        $f.on("mouseenter", toFahereneit);
+        $f.on("click", toFahereneit);
+        $c.on("mouseleave", toFahereneit);
+        $c.on("mouseenter", toCelcius); $c.on("click", toCelcius);
+        function toFahereneit() {
             temperature = TF; 
             $c.removeClass("TCTF");
             $f.addClass("defaultTemp");
             $f.addClass("TCTF");
             $temp.html(temperature);
         };
-        $c.on("mouseenter", function () {
+        function toCelcius() {
             temperature = TC; 
             $f.removeClass("TCTF");
             $f.removeClass("defaultTemp");
             $c.addClass("TCTF");
             $temp.html(temperature);
-        });
-        var weatherImages = "http://openweathermap.org/img/w/"
+        };
+        var weatherImages = "https://openweathermap.org/img/w/"
         var iconimg = data.weather[0].icon + ".png";
         var img = weatherImages + iconimg;
         var imgIcon = '\<img id=\"icon\"  src=' + img + ' \/\>';
